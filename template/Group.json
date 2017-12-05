@@ -1,0 +1,13 @@
+{
+    "data": {
+        "authorityType": "GROUP",
+        "shortName": "A11_1",
+        "fullName": "GROUP_A11_1",
+        "displayName": "A11_1",
+        "url": "api/groups/A11_1",
+        "zones": [
+            "APP.DEFAULT",
+            "AUTH.ALF"
+        ]
+    }
+}
