@@ -5,9 +5,15 @@
     <FscToolExe>fsharpc</FscToolExe>
   </PropertyGroup>
   <PropertyGroup>
+    <AssemblyName>alfresco-group-import</AssemblyName>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="alfresco-group-import.sh">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
   </ItemGroup>
