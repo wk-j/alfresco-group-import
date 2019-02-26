@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <!-- <FscToolPath>/Library/Frameworks/Mono.framework/Versions/Current/Commands</FscToolPath>
-        <FscToolExe>fsharpc</FscToolExe> -->
-    </PropertyGroup>
-    <PropertyGroup>
         <OutputType>Exe</OutputType>
         <PackageId>wk.GroupImport</PackageId>
         <TargetFramework>netcoreapp2.2</TargetFramework>
