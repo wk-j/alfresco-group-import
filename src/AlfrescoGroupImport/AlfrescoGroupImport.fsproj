@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <FscToolPath>/Library/Frameworks/Mono.framework/Versions/Current/Commands</FscToolPath>
-    <FscToolExe>fsharpc</FscToolExe>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyName>alfresco-group-import</AssemblyName>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="alfresco-group-import.sh">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Program.fs" />
-  </ItemGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
+    <PropertyGroup>
+        <!-- <FscToolPath>/Library/Frameworks/Mono.framework/Versions/Current/Commands</FscToolPath>
+        <FscToolExe>fsharpc</FscToolExe> -->
+    </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <PackageId>wk.GroupImport</PackageId>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>wk-group-import</ToolCommandName>
+        <Version>0.1.0</Version>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="FSharp.Data" Version="3.0.0" />
+        <PackageReference Include="Http.Fs" Version="5.3.0" />
+    </ItemGroup>
 </Project>

@@ -4,3 +4,5 @@ paket-files
 **/bin
 **/obj
 publish
+tools
+.publish
